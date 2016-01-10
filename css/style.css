@@ -65,7 +65,7 @@ body > header {
 
 .hero {
   position: relative;
-  background: linear-gradient(to left, #DC2424, #4A569D);
+  background: linear-gradient(to left, #FF4136, #4A569D);
   text-align: center;
   padding-bottom: 25px;
   height: 50vh;
@@ -223,9 +223,14 @@ body > header {
 .graphics {
   margin: 25px auto;
   height: 50vh;
-  min-height: 400px; }
+  min-height: 400px;
+  font-family: Source Sans Pro; }
+  .graphics h2 {
+    text-align: center;
+    margin: 25px auto;
+    font-size: 3em; }
   .graphics .graphics-content {
-    margin: 0 auto;
+    margin: 0 auto 50px auto;
     position: relative;
     top: 50%;
     -moz-transform: translateY(-50%);
@@ -234,6 +239,9 @@ body > header {
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%); }
   .graphics figure {
+    min-height: 210px;
+    padding: 10px 0;
+    background: #fff;
     width: 15.83%;
     height: auto;
     float: left; }
@@ -242,8 +250,9 @@ body > header {
     .graphics figure img {
       width: 100%;
       height: 100%;
-      border: 1px solid grey;
-      display: inline-block; }
+      display: inline-block;
+      padding: 10px;
+      padding-bottom: 0; }
       .graphics figure img::before {
         content: "";
         display: block;
@@ -251,9 +260,10 @@ body > header {
     .graphics figure figcaption {
       background: none;
       font-family: inherit;
-      font-size: 1.4em;
+      font-size: 1.6em;
       text-align: center;
-      margin-top: 25px; }
+      margin: 10px 0;
+      font-weight: 600; }
 
 footer {
   padding: 15px;
@@ -282,7 +292,7 @@ footer {
       -ms-transform: translateY(0);
       -webkit-transform: translateY(0);
       transform: translateY(0); } }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1024px) {
   .container {
     width: 95%; }
 
@@ -295,7 +305,9 @@ footer {
     .graphics figure:not(:nth-child(3n+1)) {
       margin-left: 2%; }
     .graphics figure:nth-child(n+4) {
-      margin-top: 50px; } }
+      margin-top: 50px; }
+    .graphics figure img {
+      padding: 35px 35px 0 35px; } }
 @media screen and (max-width: 690px) {
   .hero form .ss-form-question:first-child {
     width: 100%; }
@@ -329,7 +341,10 @@ footer {
     width: calc(50% - 15px);
     margin-top: 40px; }
     .hero form .ss-navigate table {
-      width: 100%; } }
+      width: 100%; }
+
+  .graphics figure img {
+    padding: 25px 25px 0 25px; } }
 @media screen and (max-width: 510px) {
   .hero form .ss-choices {
     width: 83%; }
@@ -360,6 +375,9 @@ footer {
   .hero form .ss-choices {
     width: 100%; }
 
+  .graphics h2 {
+    font-size: 5em;
+    margin-bottom: 0; }
   .graphics figure {
     position: relative;
     left: 50%;
@@ -372,7 +390,10 @@ footer {
     height: auto;
     float: left; }
     .graphics figure:nth-child(n+1) {
-      margin-left: 0;
-      margin-top: 50px; } }
+      margin-left: 0; }
+    .graphics figure img {
+      padding: 40px 40px 0 40px; }
+    .graphics figure figcaption {
+      font-size: 2.6em; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -59,7 +59,8 @@ html {
 }
 
 body {
-    font-size: 62.5% // 1em = 10px
+    font-size: 62.5%; // 1em = 10px
+    //background: #eaeaea;
 }
 
 h1 {
@@ -127,7 +128,7 @@ body > header {
 
 .hero{
     position: relative;
-    background: linear-gradient(to left, #DC2424 , #4A569D);
+    background: linear-gradient(to left, $red , #4A569D);
     text-align: center;
     padding-bottom: 25px;
     height: 50vh;
@@ -345,15 +346,26 @@ body > header {
     margin: 25px auto;
     height: 50vh;
     min-height: 400px;
+    font-family: Source Sans Pro;
+    
+    h2 {
+        text-align: center;
+        margin: 25px auto;
+        font-size: 3em;
+    }
     
     .graphics-content {
-        margin: 0 auto;
+        margin: 0 auto 50px auto;
         position: relative;
         top: 50%;
         @include translateY(-50%);
     }
     
     figure {
+        //box-shadow: 0 3px 5px 0px rgba(0,0,0,0.5);
+        min-height: 210px;
+        padding: 10px 0;
+        background: #fff;
         width: 15.83%;
         height: auto;
         float: left;
@@ -364,8 +376,9 @@ body > header {
         img {
             width: 100%;
             height: 100%;
-            border: 1px solid grey;
             display: inline-block;
+            padding: 10px;
+            padding-bottom: 0;
             &::before {
                 content: "";
                 display: block;
@@ -376,9 +389,10 @@ body > header {
         figcaption {
                 background: none;
                 font-family: inherit;
-                font-size: 1.4em;
+                font-size: 1.6em;
                 text-align: center;
-                margin-top: 25px;
+                margin: 10px 0;
+                font-weight: 600;
             }
     }
 }
@@ -410,7 +424,7 @@ footer {
         }
     }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1024px) {
         
     .container {
         width: 95%;
@@ -430,6 +444,14 @@ footer {
             
             &:nth-child(n+4) {
                 margin-top: 50px;
+            }
+            
+            img {
+                padding: 35px 35px 0 35px;
+            }
+            
+            figcaption {
+                //font-size: 2em;
             }
         }
     }
@@ -482,6 +504,12 @@ footer {
                 width: 100%;
             }
         }
+    }
+    
+    .graphics figure {
+        img {
+                padding: 25px 25px 0 25px;
+            }
     }
     
 }
@@ -540,6 +568,12 @@ footer {
         }
     }
     .graphics {
+        
+        h2 {
+            font-size: 5em;
+            margin-bottom: 0;
+        }
+        
         figure {
             position: relative;
             left: 50%;
@@ -549,7 +583,14 @@ footer {
             float: left;
             &:nth-child(n+1) {
                 margin-left: 0;
-                margin-top: 50px;
+            }
+            
+            img {
+                padding: 40px 40px 0 40px;
+            }
+            
+            figcaption {
+                font-size: 2.6em;
             }
         }
     }
