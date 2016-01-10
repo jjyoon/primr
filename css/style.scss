@@ -55,7 +55,7 @@ body {
 
 html {
     font-size: 16px;
-    font-family: Maven Pro;
+    font-family: 'Maven Pro', sans-serif;
 }
 
 body {
@@ -144,7 +144,7 @@ body > header {
         @include translateY(-50%);
         color: #fff;
         font-weight: 100;
-        font-family: Source Sans Pro;
+        font-family: 'Source Sans Pro';
         
         h1 {
             margin-top: 25px;
@@ -354,7 +354,7 @@ body > header {
 
 .graphics {
     margin: 25px auto;
-    font-family: Source Sans Pro;
+    font-family: 'Source Sans Pro', sans-serif;
     
     h2 {
         text-align: center;
