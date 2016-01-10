@@ -1,1 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500"><defs><style>.a{fill:none;}.a,.b{stroke:#8e7cc3;stroke-linecap:round;stroke-linejoin:round;stroke-width:10px;}.b{fill:#fff;}</style></defs><title>PRIMR Icons</title><path class="a" d="M54.66,307.26L35,380.74,108.47,361A160.79,160.79,0,1,0,54.66,307.26Z"/><path class="b" d="M444.3,366L464,439.49l-73.51-19.7A160.79,160.79,0,1,1,444.3,366Z"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+<g>
+	<g id="XMLID_6_">
+		<path fill="none" stroke="#8E7CC3" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" d="M146.8,281.6l-10.4,38.7
+			l38.7-10.4c12.8,7.8,27.9,12.4,44.1,12.4c46.8,0,84.8-38,84.8-84.8s-38-84.8-84.8-84.8s-84.8,38-84.8,84.8
+			C134.4,253.6,138.9,268.7,146.8,281.6z"/>
+	</g>
+	<g id="XMLID_7_">
+		<path fill="#FFFFFF" stroke="#8E7CC3" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" d="M352.2,312.5
+			l10.4,38.7l-38.7-10.4c-12.8,7.8-27.9,12.4-44.1,12.4c-46.8,0-84.8-38-84.8-84.8s38-84.8,84.8-84.8s84.8,38,84.8,84.8
+			C364.5,284.6,360,299.7,352.2,312.5z"/>
+	</g>
+</g>
+<circle fill="none" stroke="#8E7CC3" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="250" cy="250" r="222.4"/>
+</svg>

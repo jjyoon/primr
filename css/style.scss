@@ -47,6 +47,14 @@
     @include transform(translateY($y));
 }
 
+@mixin blur ($px) {
+    -webkit-filter: blur($px);
+    -moz-filter: blur($px);
+    -o-filter: blur($px);
+    -ms-filter: blur($px);
+    filter: blur($px);
+}
+
 html,
 body {
     height: 100%;
@@ -128,23 +136,38 @@ body > header {
 
 .hero{
     position: relative;
-    background: 
-        linear-gradient(to left, rgba(255, 41, 41, 0.9) , rgba(74, 86, 157, 0.8)),
-        url("../img/geometry2.png") repeat;
-    background-blend-mode: multiply;
     text-align: center;
     padding-bottom: 25px;
     height: 50vh;
     min-height: 500px;
+    overflow: hidden;
+    background: #000;
+    &::after {
+        content: "";
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: 
+        linear-gradient(to left, rgba(0, 0, 0, 0.4) , rgba(0, 0, 0, 0.4)),
+        url("../img/abstract.jpg") center center no-repeat;
+        //background-blend-mode: multiply;
+        background-size: cover;
+        @include blur (5px);
+        
+    }
     
     .hero-content {
         position: relative;
+        z-index: 5;
         margin: 0 auto;
         top: 50%;
         @include translateY(-50%);
         color: #fff;
         font-weight: 100;
-        font-family: 'Source Sans Pro';
+        font-family: 'Maven Pro';
         overflow-x: hidden;
         
         h1 {
@@ -168,7 +191,7 @@ body > header {
         height: auto;
         padding: 15px;
         margin: 0 auto 25px auto;
-        background: rgba(255,255,255,0.25);
+        background: rgba(255,255,255,0.3);
         box-shadow: 0 3px 5px 0px rgba(0,0,0,0.5);
         border-radius: 10px;
         font-family: inherit;
@@ -406,6 +429,30 @@ body > header {
                 font-weight: 600;
             }
     }
+    
+    .marketplace {
+        color: #93c47d;
+    }
+    
+    .consultants {
+        color: #76a5af;
+    }
+    
+    .low-prices {
+        color: #6d9eeb;
+    }
+    
+    .product {
+        color: #6fa8dc;
+    }
+    
+    .communication {
+        color: #8e7cc3;
+    }
+    
+    .payment {
+        color: #c27ba0;
+    }
 }
 
 footer {
@@ -495,7 +542,7 @@ footer {
         }
         
         .ss-choices {
-            width: 88%;
+            width: 86%;
         }
         
         .ss-choice-item {
@@ -530,7 +577,7 @@ footer {
     .hero form {
         
         .ss-choices {
-            width: 83%;
+            width: 82%;
         }
     }
     

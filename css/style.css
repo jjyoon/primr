@@ -65,14 +65,30 @@ body > header {
 
 .hero {
   position: relative;
-  background: linear-gradient(to left, rgba(255, 41, 41, 0.9), rgba(74, 86, 157, 0.8)), url("../img/geometry2.png") repeat;
-  background-blend-mode: multiply;
   text-align: center;
   padding-bottom: 25px;
   height: 50vh;
-  min-height: 500px; }
+  min-height: 500px;
+  overflow: hidden;
+  background: #000; }
+  .hero::after {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/abstract.jpg") center center no-repeat;
+    background-size: cover;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px); }
   .hero .hero-content {
     position: relative;
+    z-index: 5;
     margin: 0 auto;
     top: 50%;
     -moz-transform: translateY(-50%);
@@ -82,7 +98,7 @@ body > header {
     transform: translateY(-50%);
     color: #fff;
     font-weight: 100;
-    font-family: 'Source Sans Pro';
+    font-family: 'Maven Pro';
     overflow-x: hidden; }
     .hero .hero-content h1 {
       margin-top: 25px; }
@@ -103,7 +119,7 @@ body > header {
     height: auto;
     padding: 15px;
     margin: 0 auto 25px auto;
-    background: rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.3);
     box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     font-family: inherit;
@@ -268,6 +284,18 @@ body > header {
       text-align: center;
       margin: 10px 0;
       font-weight: 600; }
+  .graphics .marketplace {
+    color: #93c47d; }
+  .graphics .consultants {
+    color: #76a5af; }
+  .graphics .low-prices {
+    color: #6d9eeb; }
+  .graphics .product {
+    color: #6fa8dc; }
+  .graphics .communication {
+    color: #8e7cc3; }
+  .graphics .payment {
+    color: #c27ba0; }
 
 footer {
   padding: 15px;
@@ -335,7 +363,7 @@ footer {
       transform: translateX(-50%);
       top: -25px; }
   .hero form .ss-choices {
-    width: 88%; }
+    width: 86%; }
   .hero form .ss-choice-item {
     width: 33%; }
   .hero form input[aria-label="Email:  "] {
@@ -351,7 +379,7 @@ footer {
     padding: 25px 25px 0 25px; } }
 @media screen and (max-width: 510px) {
   .hero form .ss-choices {
-    width: 83%; }
+    width: 82%; }
 
   .graphics figure {
     width: 47.5%;
