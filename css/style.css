@@ -65,7 +65,8 @@ body > header {
 
 .hero {
   position: relative;
-  background: linear-gradient(to left, #FF4136, #4A569D);
+  background: linear-gradient(to left, rgba(255, 41, 41, 0.9), rgba(74, 86, 157, 0.8)), url("../img/geometry2.png") repeat;
+  background-blend-mode: multiply;
   text-align: center;
   padding-bottom: 25px;
   height: 50vh;
@@ -87,7 +88,16 @@ body > header {
     .hero .hero-content h2 {
       margin: 40px 0;
       line-height: 1.25em; }
+  .hero .after-submit {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
   .hero form {
+    position: relative;
     width: auto;
     height: auto;
     padding: 15px;
@@ -218,29 +228,22 @@ body > header {
         letter-spacing: 2px;
         background: #0074D9;
         outline: none;
-        color: #FFFFFF; }
+        color: #FFFFFF;
+        cursor: pointer; }
 
 .graphics {
   margin: 25px auto;
-  height: 50vh;
-  min-height: 400px;
   font-family: Source Sans Pro; }
   .graphics h2 {
     text-align: center;
-    margin: 25px auto;
-    font-size: 3em; }
+    margin: 25px auto 25px auto;
+    font-size: 3.6em;
+    display: inline-block;
+    width: 100vw; }
   .graphics .graphics-content {
-    margin: 0 auto 50px auto;
-    position: relative;
-    top: 50%;
-    -moz-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%); }
+    margin: 0 auto 50px auto; }
   .graphics figure {
     min-height: 210px;
-    padding: 10px 0;
     background: #fff;
     width: 15.83%;
     height: auto;

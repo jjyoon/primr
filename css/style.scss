@@ -128,7 +128,10 @@ body > header {
 
 .hero{
     position: relative;
-    background: linear-gradient(to left, $red , #4A569D);
+    background: 
+        linear-gradient(to left, rgba(255, 41, 41, 0.9) , rgba(74, 86, 157, 0.8)),
+        url("../img/geometry2.png") repeat;
+    background-blend-mode: multiply;
     text-align: center;
     padding-bottom: 25px;
     height: 50vh;
@@ -153,7 +156,13 @@ body > header {
         }
     }
     
+    .after-submit {
+        display: none;
+        @include center(both);
+    }
+    
     form {
+        position: relative;
         width: auto;
         height: auto;
         padding: 15px;
@@ -336,6 +345,7 @@ body > header {
                 background: $blue;
                 outline: none;
                 color: $white;
+                cursor: pointer;
             }
         }
     }
@@ -344,27 +354,27 @@ body > header {
 
 .graphics {
     margin: 25px auto;
-    height: 50vh;
-    min-height: 400px;
     font-family: Source Sans Pro;
     
     h2 {
         text-align: center;
-        margin: 25px auto;
-        font-size: 3em;
+        margin: 25px auto 25px auto;
+        font-size: 3.6em;
+        display: inline-block;
+        width: 100vw;
     }
     
     .graphics-content {
         margin: 0 auto 50px auto;
-        position: relative;
-        top: 50%;
-        @include translateY(-50%);
+//        position: relative;
+//        top: 50%;
+//        @include translateY(-50%);
     }
     
     figure {
         //box-shadow: 0 3px 5px 0px rgba(0,0,0,0.5);
         min-height: 210px;
-        padding: 10px 0;
+        //padding: 10px 0;
         background: #fff;
         width: 15.83%;
         height: auto;
