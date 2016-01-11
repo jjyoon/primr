@@ -246,7 +246,8 @@ body > header {
         background: #0074D9;
         outline: none;
         color: #FFFFFF;
-        cursor: pointer; }
+        cursor: pointer;
+        -webkit-appearance: none; }
 
 .graphics {
   margin: 25px auto;

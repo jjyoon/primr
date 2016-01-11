@@ -370,6 +370,7 @@ body > header {
                 outline: none;
                 color: $white;
                 cursor: pointer;
+                -webkit-appearance: none;
             }
         }
     }
