@@ -331,6 +331,10 @@ body > header {
         input.ss-q-other-toggle[type="radio"]:checked ~ .ss-q-other-container {
             opacity: 1;
             margin-top: 10px;
+            
+            input {
+                height: 40px;
+            }
         }
         
         .ss-q-other-container {
@@ -343,7 +347,8 @@ body > header {
             margin-top: -100px;
             transition: all 0.3s ease-in-out;   
             input {
-                height: 40px;
+                height: 0;
+                transition: all 0.3s ease-in-out;  
             }
         }
         // email button

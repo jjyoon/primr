@@ -217,6 +217,8 @@ body > header {
     .hero form input.ss-q-other-toggle[type="radio"]:checked ~ .ss-q-other-container {
       opacity: 1;
       margin-top: 10px; }
+      .hero form input.ss-q-other-toggle[type="radio"]:checked ~ .ss-q-other-container input {
+        height: 40px; }
     .hero form .ss-q-other-container {
       opacity: 0;
       position: relative;
@@ -227,7 +229,8 @@ body > header {
       margin-top: -100px;
       transition: all 0.3s ease-in-out; }
       .hero form .ss-q-other-container input {
-        height: 40px; }
+        height: 0;
+        transition: all 0.3s ease-in-out; }
     .hero form .ss-navigate {
       float: left;
       display: inline-block; }
